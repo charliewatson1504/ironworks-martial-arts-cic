@@ -1,0 +1,245 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.6;
+    color: #686868;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.heading-font {
+  font-family: "Playfair Display", serif;
+}
+
+/* Container */
+.container {
+    margin: 2.5rem 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Header */
+
+header #logo h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #686868;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    /* padding: 0 20px 0 20px; */
+}
+
+header .current a {
+    color: #686868;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #2f2f2f;
+}
+
+header .navbar.bg-light {
+    background: azure !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage-box {
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    margin: auto 0;
+    padding: 5rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    right: -5rem;
+}
+
+.homepage-box-pic img {
+    width: 500px;
+    height: auto;
+}
+
+.flex.overlap {
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    border: #686868 solid 1px;
+}
+
+.btn:hover {
+    background-color: #686868;
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    background: url('/assets/images/hero-img.webp') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    justify-content: center;
+}
+
+#hero h1 {
+    font-size: 64px;
+    margin: 0 300px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Our Commitment Section */
+
+
+
+/* Hero Image 2 Section */
+
+#hero-image-2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Our Partners Section */
+
+#our-partners .btn {
+    text-decoration: none;
+}
+
+/* About Page */
+
+#our-method {
+    justify-content: center;
+    gap: 2rem;
+    min-height: calc(100vh - 20rem);
+}
+
+#our-method .info-box {
+    width: 30rem;
+    background-color: #fff;
+    padding: 5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#our-method .flex-item h1 {
+    text-transform: uppercase;
+}
+
+#our-method .flex-item p {
+    margin: 2.5rem 0;
+}
+
+/* Partners page */
+
+#partners {
+    min-height: calc(100vh - 20rem);
+}
+
+#partners h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#partners h2 {
+    font-size: 20px;
+}
+
+#partners .flex {
+    justify-content: center;
+    gap: 2rem;
+    background-color: #fff;
+}
+
+#partners .flex-item {
+    flex: 1;
+}
+
+#partners .flex-item img {
+    width: 300px;
+    height: auto;
+    float: right;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #686868;
+    font-size: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        min-height: 0;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    header.flex {
+        align-items: flex-start;
+    }
+
+    header #logo {
+        margin: 8px;
+    }
+
+    header #logo h1 {
+        font-size: 18px;
+    }
+
+    #our-commitment .flex,
+    #our-partners .flex {
+        flex-direction: column;
+    }
+}
