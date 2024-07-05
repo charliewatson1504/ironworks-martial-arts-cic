@@ -160,33 +160,184 @@ header .navbar.bg-light {
 
 /* Partners page */
 
-#partners {
+#partners,
+#projects {
     min-height: calc(100vh - 20rem);
 }
 
-#partners h1 {
+#partners h1,
+#projects h1 {
     text-transform: uppercase;
     text-align: center;
 }
 
-#partners h2 {
+#partners h2,
+#projects h2 {
     font-size: 20px;
 }
 
-#partners .flex {
+#partners .flex,
+#projects .flex {
     justify-content: center;
     gap: 2rem;
     background-color: #fff;
 }
 
-#partners .flex-item {
+#partners .flex-item,
+#projects .flex-item {
     flex: 1;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#partners .flex-item:first-child,
+#projects .flex-item:first-child {
+    align-items: flex-end;
 }
 
-#partners .flex-item img {
+#partners .flex-item img,
+#projects .flex-item img {
     width: 300px;
     height: auto;
-    float: right;
+}
+
+#projects .hero-image {
+    background: url('/assets/images/lottery-community-logo.webp') no-repeat center center/cover;
+    height: 500px;
+    justify-content: center;
+
+}
+
+/* Meet the team page */
+
+#meet-the-team {
+    min-height: calc(100vh - 20rem);
+}
+
+#meet-the-team h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#meet-the-team h2 {
+    font-size: 20px;
+}
+
+#meet-the-team .flex {
+    justify-content: center;
+    gap: 2rem;
+    background-color: #fff;
+}
+
+#meet-the-team .flex-item {
+    flex: 1;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+#meet-the-team .flex-item:first-child {
+    align-items: flex-end;
+}
+
+#meet-the-team .flex-item img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#meet-the-team .container .info-box p {
+    width: 35rem;
+}
+
+#meet-the-team .container .info-box h2,
+#meet-the-team .container .info-box h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#meet-the-team .container .info-box h3 {
+    font-style: italic;
+    font-size: 16px;
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+
+/* Gallery */
+
+#gallery {
+    min-height: calc(100vh - 20rem);
+}
+
+#gallery h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#gallery .flex {
+    justify-content: center;
+    gap: 2rem;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+#gallery .flex-item {
+    flex: 1;
+    height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+#gallery .flex-item img {
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Where we are page */
+
+#where-we-are {
+    min-height: calc(100vh - 20rem);
+}
+
+#where-we-are h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#where-we-are .flex {
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#where-we-are .flex-item p,
+#where-we-are .flex-item a {
+    padding: 0.5rem 16rem;
+}
+
+#where-we-are .flex-item a {
+    text-decoration: none;
+    color: #686868;
+}
+
+/* 404 */
+
+#not-found {
+    min-height: calc(100vh - 20rem);
+}
+
+#not-found h1 {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* Footer */
